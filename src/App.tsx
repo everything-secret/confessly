@@ -52,7 +52,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    const client = supabase;
+    const client = supabase!;
     if (!client) return;
 
     let channel: ReturnType<typeof client.channel>;
